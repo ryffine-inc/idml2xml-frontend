@@ -9,7 +9,7 @@
 	url = https://github.com/transpect/xslt-util
 [submodule "idml2xml"]
 	path = idml2xml
-	url = https://github.com/transpect/idml2xml
+	url = git@github.com:ryffine-inc/idml2xml.git
 [submodule "schema/hub"]
 	path = schema/hub
 	url = https://github.com/le-tex/Hub
