@@ -18,14 +18,19 @@
   <p:option name="debug" select="'no'"/>
   <p:option name="debug-dir-uri" select="'yes'"/>
   <p:option name="status-dir-uri" select="'status'"/>
-  
+  <!-- RYFFINE: expose srcpaths so callers can request per-phrase source provenance
+       (used by the heading-boundary post-process to detect Story boundaries).
+       Defaults to 'no' so existing callers are unaffected. -->
+  <p:option name="srcpaths" select="'no'"/>
+
   <p:import href="http://transpect.io/idml2xml/xpl/idml2hub.xpl"/>
-  
+
   <idml2xml:hub name="idml2xml">
     <p:with-option name="idmlfile" select="$idml"/>
     <p:with-option name="debug" select="$debug"/>
     <p:with-option name="debug-dir-uri" select="$debug-dir-uri"/>
     <p:with-option name="status-dir-uri" select="$status-dir-uri"/>
+    <p:with-option name="srcpaths" select="$srcpaths"/>
   </idml2xml:hub>
   
 </p:declare-step>
