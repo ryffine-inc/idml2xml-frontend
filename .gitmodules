@@ -6,7 +6,7 @@
 	url = https://github.com/transpect/xproc-util
 [submodule "xslt-util"]
 	path = xslt-util
-	url = https://github.com/transpect/xslt-util
+	url = git@github.com:ryffine-inc/xslt-util.git
 [submodule "idml2xml"]
 	path = idml2xml
 	url = git@github.com:ryffine-inc/idml2xml.git
